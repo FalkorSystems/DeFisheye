@@ -1,0 +1,20 @@
+
+[Desktop Entry]
+Name=DeFisheye
+GenericName=Fisheye distortion removal tool
+Comment=Rectification tool for removing distortion from video
+
+Icon=defisheye
+
+Exec=/home/lucid/Code/gopro_calibration/DeFisheye/defisheye %f
+Terminal=false
+X-MultipleArgs=false
+
+Categories=Multimedia;
+X-Ubuntu-Category-Secondary=Video;
+StartupNotify=true
+Type=Application
+Version=1.0
+X-DCOP-ServiceType=none
+X-KDE-SubstituteUID=false
+X-KDE-Username=

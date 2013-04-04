@@ -1,0 +1,12 @@
+diff -r 6dfab963091c py2app/apptemplate/src/main.c
+--- a/py2app/apptemplate/src/main.c	Tue Mar 26 13:24:12 2013 +0100
++++ b/py2app/apptemplate/src/main.c	Sun Mar 31 11:28:23 2013 -0400
+@@ -886,7 +886,7 @@
+     if (getenv("PYTHONMALLOCSTATS") != NULL) {
+         unsetenv("PYTHONMALLOCSTATS");
+     }
+-
++   setenv( "PYTHONDONTWRITEBYTECODE", "1", 1);
+ 
+     if (!py2app_getApplicationName()) return report_error(ERR_NONAME);
+     pyLocations = (CFArrayRef)py2app_getKey("PyRuntimeLocations");

@@ -1,0 +1,14 @@
+diff -r 6dfab963091c py2app/apptemplate/setup.py
+--- a/py2app/apptemplate/setup.py	Tue Mar 26 13:24:12 2013 +0100
++++ b/py2app/apptemplate/setup.py	Sat Mar 30 19:19:39 2013 -0400
+@@ -107,8 +107,9 @@
+ 
+                 CC=os.path.join(root, 'usr', 'bin', entry['cc'])
+                 CFLAGS = BASE_CFLAGS + ' ' + entry['cflags'].replace('@@XCODE_ROOT@@', root)
++                LDFLAGS = '-framework Cocoa'
+                 os.environ['MACOSX_DEPLOYMENT_TARGET'] = entry['target']
+-                os.system('"%(CC)s" -o "%(dest)s" "%(src)s" %(CFLAGS)s' % locals())
++                os.system('"%(CC)s" -o "%(dest)s" "%(src)s" %(CFLAGS)s %(LDFLAGS)s' % locals())
+ 
+     dest = os.path.join(
+             builddir,

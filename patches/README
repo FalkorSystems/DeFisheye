@@ -1,0 +1,6 @@
+These patches are needed to make sure that py2app can create an app
+that plays nicely with codesigning and sandboxing. For reference:
+
+https://bitbucket.org/ronaldoussoren/py2app/issue/101/sandboxd-deny-file-write-unlink-messages
+
+https://bitbucket.org/ronaldoussoren/py2app/issue/85/sandboxing-interaction-issue
