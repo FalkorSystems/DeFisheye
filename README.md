@@ -6,7 +6,7 @@ Remove the Fisheye from a video, using OpenCV camera calibrations
 
 # Release Notes
 
-## <Date>: Initial release
+## April 8, 2013: Initial release
 
 # General notes
 
