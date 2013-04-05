@@ -50,7 +50,9 @@ if (platform.system() == "Darwin"):
                    'CFBundleName': 'DeFisheye',
                    'CFBundleVersion': '0.1.0',
                    'CFBundleShortVersionString': '0.1.0',
-                   'CFBundleDocumentTypes': [ { 'CFBundleTypeName': 'MP4' } ],
+                   'CFBundleDocumentTypes': [ { 'CFBundleTypeName': 'MP4',
+                                                'CFBundleTypeRole': 'Editor'
+                                                } ],
                    'LSApplicationCategoryType': 'public.app-category.video',
                }
     }
